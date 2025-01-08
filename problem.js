@@ -1,26 +1,27 @@
+// Variable Declarations
 let name = "Suraj";
 const age = 25;
 let isLearning = true;
 
+// Loop to log numbers from 0 to 4
 for (let i = 0; i < 5; i++) {
     console.log(i);
 }
 
+// Function to greet
 function greet(name) {
     return `Hello, ${name}!`;
 }
+
+// Arrow function version of greet
 const greetArrow = (name) => `Hello, ${name}!`;
 
-const btn = document.getElementById('myButton');
 
-btn.addEventListener('click', () => {
-    document.body.style.backgroundColor = 'blue';
-});
-
-const fetchData = async () => {
-    const response = await fetch('https://api.example.com/data');
-    const data = await response.json();
-    console.log(data);
-};
-fetchData();
-
+// Check if the button exists before adding an event listener
+if (btn) {
+    btn.addEventListener('click', () => {
+        document.body.style.backgroundColor = 'blue';
+    });
+} else {
+    console.warn('Button with ID "myButton" not found.');
+}
