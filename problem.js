@@ -16,3 +16,10 @@ const btn = document.getElementById('myButton');
 btn.addEventListener('click', () => {
     document.body.style.backgroundColor = 'blue';
 });
+
+const fetchData = async () => {
+    const response = await fetch('https://api.example.com/data');
+    const data = await response.json();
+    console.log(data);
+};
+fetchData();
