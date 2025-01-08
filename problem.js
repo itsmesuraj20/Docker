@@ -13,15 +13,3 @@ function greet(name) {
     return `Hello, ${name}!`;
 }
 
-// Arrow function version of greet
-const greetArrow = (name) => `Hello, ${name}!`;
-
-
-// Check if the button exists before adding an event listener
-if (btn) {
-    btn.addEventListener('click', () => {
-        document.body.style.backgroundColor = 'blue';
-    });
-} else {
-    console.warn('Button with ID "myButton" not found.');
-}
