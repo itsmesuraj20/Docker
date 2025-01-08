@@ -23,3 +23,4 @@ const fetchData = async () => {
     console.log(data);
 };
 fetchData();
+
